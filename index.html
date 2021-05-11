@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>test</title>
+</head>
+
+<body>
+    <section class="box">
+        <div class="reg_form">
+            <h1>Форма регистрации</h1>
+            <form class="registration" action="chec.php" method="POST">
+                <input type="text" class="form_control" name="name" id="name" placeholder="First name" required>
+                <input type="text" class="form_control" name="last_name" id="last_name" placeholder="Last name"
+                    required>
+                <input type="email" class="form_control" name="email" id="email" placeholder="Your email:" required>
+                <input type="text" class="form_control" name="company_name" id="company_name"
+                    placeholder="Company name">
+                <input type="text" class="form_control" name="position" id="position" placeholder="Position">
+                <input class="form_control" name="telephone_1" id="telephone_1" placeholder="+7-***-***-**-**">
+                <input class="form_control" name="telephone_2" id="telephone_2" placeholder="+7-***-***-**-**">
+                <input class="form_control" name="telephone_3" id="telephone_3" placeholder="+7-***-***-**-**">
+                <button type="submit" name="form-btn" id="form-btn" class="form-btn">Registration</button>
+                <!--<input type="submit" name="form-btn" id="form-btn" class="form-btn" value="Registration">-->
+            </form>
+            <fieldset>
+                <form method="post" action="all_users.php" method="POST">
+                    <input id="submit" type="submit" value="Вывести всех пользователей">
+                </form>
+            </fieldset>
+        </div>
+
+
+    </section>
+
+</body>
+
+</html>
